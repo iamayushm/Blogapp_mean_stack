@@ -37,7 +37,7 @@ export class UpdateComponent implements OnInit {
     
     this.listService.put(this.id,data).subscribe(()=>{
       console.log("data posted");
-      this.router.navigate(['/'])
+      this.router.navigate([`/single/${this.id}`])
     })
   }
 
